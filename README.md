@@ -2,10 +2,10 @@
 
 ![Diagrama de conexão](https://user-images.githubusercontent.com/107638696/241324971-43b8fe88-447d-4c2d-9296-4b3aaa50f4ce.png)
 
-Este repositório contém um projeto em *C* para utilizar o sensor de pressão e temperatura *MPU6050* com a placa *Raspberry Pi Pico*.
+Este repositório contém um projeto em **C** para utilizar o sensor de pressão e temperatura **MPU6050** com a placa **Raspberry Pi Pico**.
 
 
-> ⚠️ *Observação:* Para detalhes maiores e aprofundados do uso do sensor, veja documentação com explicações e datasheet de referência [Sensor giroscópio ](https://www.notion.so/labiras/Sensor-Girosc-pio-MPU6050-22967aa6595380b2b38cc1529256ba44).
+> ⚠️ **Observação:** Para detalhes maiores e aprofundados do uso do sensor, veja documentação com explicações e datasheet de referência [Sensor giroscópio ](https://www.notion.so/labiras/Sensor-Girosc-pio-MPU6050-22967aa6595380b2b38cc1529256ba44).
 ---
 
 ## ✨ Funcionalidades
@@ -19,19 +19,19 @@ Este repositório contém um projeto em *C* para utilizar o sensor de pressão e
 ---
 
 ## 🛠️ Hardware Necessário
-- Raspberry Pi *Pico ou Pico W*  
-- Módulo Sensor de giroscópio *MPU6050*  
-- *Cabos/Jumpers* para conexão  
+- Raspberry Pi **Pico ou Pico W**
+- Módulo Sensor de giroscópio **MPU6050**  
+- **Cabos/Jumpers** para conexão  
 ---
 
 ## 📦 Software e Dependências
-- *Visual Studio Code*  
-- *Extensão Raspberry Pi Pico/W* para VS Code (Recomendado)  
-- *Raspberry Pi Pico SDK, **ARM GCC Compiler* e *CMake*  
+- **Visual Studio Code**
+- **Extensão Raspberry Pi Pico/W** para VS Code (Recomendado)  
+- **Raspberry Pi Pico SDK**, **ARM GCC Compiler** e **CMake**  
 ---
 
 ## 🔌 Conexões
-Conecte o sensor *MPU6050* à Raspberry Pi Pico, conforme a tabela abaixo:
+Conecte o sensor **MPU6050** à Raspberry Pi Pico, conforme a tabela abaixo:
 
 | Pino do Pico W | Pino do MPU6050 | Função        |
 |----------------|------------------|----------------|
@@ -45,32 +45,34 @@ Conecte o sensor *MPU6050* à Raspberry Pi Pico, conforme a tabela abaixo:
 ## 🚀 Como Compilar e Executar
 
 ### Usando o VS Code com a Extensão Raspberry Pi Pico (Recomendado)
-1. *Abra o Projeto*: No VS Code, abra a pasta raiz do projeto.  
-2. *Prepare a Placa: Coloque a Raspberry Pi Pico em modo **BOOTSEL* (pressione e segure o botão enquanto conecta o cabo USB).  
-3. *Envie o Código: Clique no botão **Run* na barra de status.  
+1. **Abra o Projeto**: No VS Code, abra a pasta raiz do projeto.  
+2. **Prepare a Placa**: Coloque a Raspberry Pi Pico em modo **BOOTSEL* (pressione e segure o botão enquanto conecta o cabo USB).  
+3. **Envie o Código**: Clique no botão **Run* na barra de status.  
    - A extensão compilará o código e fará o upload automaticamente.  
-4. *Visualize a Saída: Abra o **monitor serial* integrado do VS Code para ver as leituras de pressão e temperatura.  
+4. **Visualize a Saída**: Abra o **monitor serial* integrado do VS Code para ver as leituras de pressão e temperatura.  
 
 ### Usando a Linha de Comando
-1. *Clone o repositório*:
-   bash
+1. **Clone o repositório**:
+   ```bash
    git clone https://github.com/LabirasIFPI/pico_mpu6050.git
    cd pico_mpu6050
+   ```
     
 
-2. *Criar e configurar BUILD*
-    bash 
+3. **Criar e configurar BUILD**
+    ```bash 
     mkdir build
     cd build
-    
-3. *Compile*
-    bash
+    ```
+4. **Compile**
+    ```bash
     make
+    ```
     
 
-4. *Carregue o firmware*
+5. **Carregue o firmware**
    -   Coloque a Pico em modo *BOOTSEL*.
-    -    Copie o arquivo build/seu_projeto.uf2 para o drive que a Pico montou no seu sistema.
+    - Copie o arquivo **build/seu_projeto.uf2** para o drive que a Pico montou no seu sistema.
 
 
 
